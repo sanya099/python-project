@@ -1,0 +1,51 @@
+while True:
+  print("This is a program to know your horoscope:")
+  date = int(input("Enter your  birth date: \n"))
+
+  if date > 31:
+    print("Please enter the correct date. The date should not exceed 31\n")
+    continue
+
+  month = int(input("Enter your birthday month in number format ( for example 1 for January, 2 for February,..... and  12 for December ): \n"))
+
+  if month > 12:
+    print("Please enter the correct month. The month should not exceed 12\n")
+    continue
+
+
+  if month == 12:
+    if (date < 22): sign = 'Sagittarius'
+    else: 'Capricorn'
+  elif month == 1:
+    if (date < 20): sign = 'Capricorn'
+    else: 'Aquarius'
+  elif month == 2:
+    if (date < 19): sign = 'Aquarius'
+    else: 'Pisces'
+  elif month == 3:
+    if (date < 21): sign = 'Pisces'
+    else: 'Aries'
+  elif month == 4:
+    if (date < 20): sign = 'Aries'
+    else: 'Taurus'
+  elif month == 5:
+    if (date < 21): sign = 'Taurus'
+    else: 'Gemini'
+  elif month == 6:
+    if (date < 21): sign = 'Gemini'
+    else: 'Cancer'
+  elif month == 7:
+    if (date < 23):sign = 'Cancer'
+    else: 'Leo'
+  elif month == 8:
+    if (date < 23): sign = 'Leo'
+    else: 'Virgo'
+  elif month == 9:
+    if (date < 23): sign = 'Virgo'
+    else: 'Libra'
+  elif month == 10:
+    if (date < 23): sign = 'Libra'
+    else: 'Scorpio'
+  elif month == 11:
+    if (date < 22): sign = 'Scorpio'
+    else: 'Sagittarius'
